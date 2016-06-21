@@ -43,13 +43,13 @@ public class SimpleLiteMBehaviour : MonoBehaviour
 
 		this._ms = new NyARUnityMarkerSystem (config);
 		mid1 = this._ms.addARMarker (
-			new StreamReader (new MemoryStream (((TextAsset)Resources.Load ("patt_hiro", typeof(TextAsset))).bytes)),
+			new StreamReader (new MemoryStream (((TextAsset)Resources.Load ("candle_marker64", typeof(TextAsset))).bytes)),
 			16, 25, 80);
 		mid2 = this._ms.addARMarker (
-			new StreamReader (new MemoryStream (((TextAsset)Resources.Load ("patt_kanji", typeof(TextAsset))).bytes)),
+			new StreamReader (new MemoryStream (((TextAsset)Resources.Load ("convex_marker64", typeof(TextAsset))).bytes)),
 			16, 25, 80);
 		mid3 = this._ms.addARMarker (
-			new StreamReader (new MemoryStream (((TextAsset)Resources.Load ("patt_l", typeof(TextAsset))).bytes)),
+			new StreamReader (new MemoryStream (((TextAsset)Resources.Load ("screen_marker64", typeof(TextAsset))).bytes)),
 			16, 25, 80);
 
 		//setup background
